@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <p>
+            <label>Fahrenheit</label>
+            <input id="inputFahrenheit" type="number" placeholder="fahr" 
+            oninput="convertFahrToCelsius(this.value)"
+            oninput="convertFahrToCelsius(this.value)">
+        </p>
+            <p> Celsius: <span id="outputCelsius"></span></p>
+        <script>
+            function convertFahrToCelsius (valNum){
+                valNum = parseFloat(valNum);
+                document.getElementById("outputCelsius").innerHTML=((valNum - 32)/1.8).toFixed(4);
+            }
+        </script>
+    </body>
+</html>
